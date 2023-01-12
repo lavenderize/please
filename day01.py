@@ -1,11 +1,28 @@
-# 교재 countdown 예제
-# for countdown in 5, 4, 3, 2, 1, "hey!":
-#     print(countdown)
-# print('프로그램 종료')
+# 교재 dictionary 예제
 
-countdown_list = [5, 4, 3, 2, 1, "hey!"]
-for countdown in countdown_list:
-    print(countdown)
-print(countdown_list[3]) # 2
-print(countdown_list[-1]) # "hey!"
-print('프로그램 종료')
+
+# quotes = {
+#     "Moe": "A wise guy, huh?",
+#     "Larry": "Ow!",
+#     "Curly": "Nyuk nyuk!", # key : value
+#     }
+# stooge = "Curly"
+# print(stooge, "says:", quotes[stooge])
+
+subjects = {
+    'Eng': 'A+',
+    'His': 'A0',
+    'Sci': 'B+'
+           }
+student = 'Jane'
+subject = 'Sci'
+print(student, "'s", subject, "grade is", subjects[subject], '.')
+
+#old style
+print("%s s %s grade is %s ." % (student, subject, subjects[subject]))
+
+#format func
+print("{0} s {1} grade is {2}.".format(student, subject, subjects[subject])) # key positioning possibility
+
+#fString
+print(f'{student}s {subject} grade is {subjects[subject]}.')
