@@ -1,5 +1,7 @@
+import random
+
 limits = 20
-tweets = "pass\n" * 6
+tweets = "pass\n" * random.randint(1, 10) # 1-10 난수생성
 
 diff = limits - len(tweets)
 
